@@ -1,0 +1,18 @@
+E:\HK1_Nam_3\Công Nghệ NET\DAO_NhaHang\bin\Debug\DAO_NhaHang.dll
+E:\HK1_Nam_3\Công Nghệ NET\DAO_NhaHang\bin\Debug\DAO_NhaHang.pdb
+E:\HK1_Nam_3\Công Nghệ NET\DAO_NhaHang\obj\Debug\DAO_NhaHang.csproj.AssemblyReference.cache
+E:\HK1_Nam_3\Công Nghệ NET\DAO_NhaHang\obj\Debug\DAO_NhaHang.csproj.CoreCompileInputs.cache
+E:\HK1_Nam_3\Công Nghệ NET\DAO_NhaHang\obj\Debug\DAO_NhaHang.dll
+E:\HK1_Nam_3\Công Nghệ NET\DAO_NhaHang\obj\Debug\DAO_NhaHang.pdb
+E:\HK1_Nam_3\Công Nghệ NET\DoAnNET\DAO_NhaHang\bin\Debug\DAO_NhaHang.dll
+E:\HK1_Nam_3\Công Nghệ NET\DoAnNET\DAO_NhaHang\bin\Debug\DAO_NhaHang.pdb
+E:\HK1_Nam_3\Công Nghệ NET\DoAnNET\DAO_NhaHang\obj\Debug\DAO_NhaHang.csproj.AssemblyReference.cache
+E:\HK1_Nam_3\Công Nghệ NET\DoAnNET\DAO_NhaHang\obj\Debug\DAO_NhaHang.csproj.CoreCompileInputs.cache
+E:\HK1_Nam_3\Công Nghệ NET\DoAnNET\DAO_NhaHang\obj\Debug\DAO_NhaHang.dll
+E:\HK1_Nam_3\Công Nghệ NET\DoAnNET\DAO_NhaHang\obj\Debug\DAO_NhaHang.pdb
+D:\MÔN HỌC\CN.net\DoAnNET\DAO_NhaHang\bin\Debug\DAO_NhaHang.dll
+D:\MÔN HỌC\CN.net\DoAnNET\DAO_NhaHang\bin\Debug\DAO_NhaHang.pdb
+D:\MÔN HỌC\CN.net\DoAnNET\DAO_NhaHang\obj\Debug\DAO_NhaHang.csproj.AssemblyReference.cache
+D:\MÔN HỌC\CN.net\DoAnNET\DAO_NhaHang\obj\Debug\DAO_NhaHang.csproj.CoreCompileInputs.cache
+D:\MÔN HỌC\CN.net\DoAnNET\DAO_NhaHang\obj\Debug\DAO_NhaHang.dll
+D:\MÔN HỌC\CN.net\DoAnNET\DAO_NhaHang\obj\Debug\DAO_NhaHang.pdb

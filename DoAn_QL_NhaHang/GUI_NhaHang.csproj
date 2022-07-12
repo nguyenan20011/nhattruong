@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30FC33BE-5204-4982-BCDF-B4C7F210FE31}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DoAn_QL_NhaHang</RootNamespace>
+    <AssemblyName>DoAn_QL_NhaHang</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChonBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChonBan.Designer.cs">
+      <DependentUpon>ChonBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cls_CTHD.cs" />
+    <Compile Include="cls_CT_TAM.cs" />
+    <Compile Include="cls_TAM.cs" />
+    <Compile Include="CongThucCheBien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CongThucCheBien.Designer.cs">
+      <DependentUpon>CongThucCheBien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatBan.Designer.cs">
+      <DependentUpon>DatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NguyenLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NguyenLieu.Designer.cs">
+      <DependentUpon>NguyenLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="QL_CT_HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_CT_HoaDon.Designer.cs">
+      <DependentUpon>QL_CT_HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_CT_PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_CT_PhieuNhap.Designer.cs">
+      <DependentUpon>QL_CT_PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_Luong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_Luong.Designer.cs">
+      <DependentUpon>QL_Luong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_PhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_PhieuNhap.Designer.cs">
+      <DependentUpon>QL_PhieuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_HoaDon.Designer.cs">
+      <DependentUpon>QL_HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_NhanVien.Designer.cs">
+      <DependentUpon>QL_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QL_TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QL_TaiKhoan.Designer.cs">
+      <DependentUpon>QL_TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report_HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report_HoaDon.Designer.cs">
+      <DependentUpon>Report_HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_HoaDon.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rpt_HoaDon.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaiKhoan.Designer.cs">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToan.Designer.cs">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTinNhom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTinNhom.Designer.cs">
+      <DependentUpon>ThongTinNhom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChonBan.resx">
+      <DependentUpon>ChonBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CongThucCheBien.resx">
+      <DependentUpon>CongThucCheBien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatBan.resx">
+      <DependentUpon>DatBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NguyenLieu.resx">
+      <DependentUpon>NguyenLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_CT_HoaDon.resx">
+      <DependentUpon>QL_CT_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_CT_PhieuNhap.resx">
+      <DependentUpon>QL_CT_PhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_Luong.resx">
+      <DependentUpon>QL_Luong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_PhieuNhap.resx">
+      <DependentUpon>QL_PhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_HoaDon.resx">
+      <DependentUpon>QL_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_NhanVien.resx">
+      <DependentUpon>QL_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QL_TaiKhoan.resx">
+      <DependentUpon>QL_TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report_HoaDon.resx">
+      <DependentUpon>Report_HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_HoaDon.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rpt_HoaDon.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhToan.resx">
+      <DependentUpon>ThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTinNhom.resx">
+      <DependentUpon>ThongTinNhom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_dangnhap.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IVB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PepperLunch_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beef-jaki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAO_NhaHang\DAO_NhaHang.csproj">
+      <Project>{a2ede82a-5c4a-457c-aedd-d7f406eac4ac}</Project>
+      <Name>DAO_NhaHang</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b4_restaurant.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Go back.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-vietcombank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VCB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agribank-logo-1CEEE70C76-seeklogo.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VIB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_account.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_money.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dollar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\toandeptrai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loz_truong.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoTeam.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_96px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restart_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_file_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_file_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_file_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_document_96px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_file_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit_file_48px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_search_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_more_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_2_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keepass_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_reset_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_96px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\replace_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_search_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_more_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user_male_skin_type_7_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\denied_skin_type_7_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registration_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PepperLunch_Background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PepperLunch_Background2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_user_male_skin_type_7_48px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear_search_48px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
